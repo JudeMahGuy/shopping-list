@@ -2,10 +2,13 @@ $(function() {
   $('#js-shopping-list-form').submit(event => {
     event.preventDefault();
     const userTextElement = $(event.currentTarget).find('#shopping-list-entry');
-    $(".js-display-shopping-list-entry").text(`user text is:  ${userTextElement.val()}`);
+    $(".shopping-list").append('<li>' + 'shopping-list-entry.val()');
     userTextElement.val("");
   });  
 })
+  
+  $('.shopping-list').on('click', 'li', function(event) {
+    this.remove();
 
 
 $(function() {
