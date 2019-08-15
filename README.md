@@ -1,5 +1,5 @@
 $(function() {
-  $('.shopping-list-form').submit(event => {
+  $('#js-shopping-list-form').submit(event => {
     event.preventDefault();
     const userTextElement = $(event.currentTarget).find('#shopping-list-entry');
     $(".js-display-shopping-list-entry").text(`user text is:  ${userTextElement.val()}`);
