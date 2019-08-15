@@ -16,7 +16,7 @@ $(function check() {
 $('.shopping-item-toggle').on('click', event => {
     const targetItem = $(event.currentTarget);
     const pressedBool = $(targetItem).attr('aria-pressed') === 'true';
-    targetBulb.toggleClass('').attr('aria-pressed', !pressedBool);
+    targetItem.toggleClass('checked').attr('aria-pressed', !pressedBool);
   });
 }
 });
